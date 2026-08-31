@@ -1,0 +1,4 @@
+# Install exactly one backend set in addition to requirements.txt.
+# vLLM and SGLang are Linux/CUDA oriented and are not expected to work on macOS/Apple Silicon.
+vllm==0.24.0
+sglang==0.5.3.post2

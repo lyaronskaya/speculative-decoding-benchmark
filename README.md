@@ -4,7 +4,7 @@ This repository contains the evaluation framework and experimental analysis comp
 
 Evaluations were conducted across three mathematical reasoning benchmarks of varying complexity: **GSM8K**, **MATH-500**, and **AIME25**.
 
----
+
 
 ## Implementation
 
@@ -18,7 +18,6 @@ The three speculative decoding methods are implemented with [deepseek-ai/DeepSpe
 
 The `python -m speculative_decoding.download_models` command downloads these checkpoints by default.
 
----
 
 ##  Evaluated Metrics
 
@@ -26,7 +25,6 @@ The `python -m speculative_decoding.download_models` command downloads these che
 2. **Speedup vs. AR:** Net speedup ratio relative to pure autoregressive target execution.
 3. **Peak VRAM (MB):** Peak GPU memory usage during inference.
 
----
 
 ### Prerequisites
 - Linux host with an NVIDIA GPU and CUDA driver
@@ -36,7 +34,7 @@ The `python -m speculative_decoding.download_models` command downloads these che
 ### Quick Start
 ```bash
 
-git clone [https://github.com/your-username/speculative-decoding-benchmark.git](https://github.com/your-username/speculative-decoding-benchmark.git)
+git clone https://github.com/lyaronskaya/speculative-decoding-benchmark.git
 cd speculative-decoding-benchmark
 bash scripts/setup_env_a100.sh
 source .venv/bin/activate
